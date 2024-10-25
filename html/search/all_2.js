@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['getalsintegrationtime',['getALSIntegrationTime',['../class_adafruit___v_c_n_l4200.html#aafe7823e2a9de0fb08079c431b170f5e',1,'Adafruit_VCNL4200']]],
+  ['getalspersistence',['getALSPersistence',['../class_adafruit___v_c_n_l4200.html#aaa46c4a89fae23487518d9bfd2ddb798',1,'Adafruit_VCNL4200']]],
+  ['getalsshutdown',['getALSshutdown',['../class_adafruit___v_c_n_l4200.html#aa60dd752fd1a14908a1f41fa288a4d22',1,'Adafruit_VCNL4200']]],
+  ['getalsthresholdhigh',['getALSthresholdHigh',['../class_adafruit___v_c_n_l4200.html#aa07ea9b1b62b9105bb86cfb45bb0f08a',1,'Adafruit_VCNL4200']]],
+  ['getalsthresholdlow',['getALSthresholdLow',['../class_adafruit___v_c_n_l4200.html#acd2b82fe1bec0bc78e1aaf069f7fe58c',1,'Adafruit_VCNL4200']]],
+  ['getinterrupt',['getInterrupt',['../class_adafruit___v_c_n_l4200.html#a50ef1044a0dbddf43c92acae0ddd31e4',1,'Adafruit_VCNL4200']]],
+  ['getinterruptflags',['getInterruptFlags',['../class_adafruit___v_c_n_l4200.html#aea74bbdd09df88212ecd3385fbab0c41',1,'Adafruit_VCNL4200']]],
+  ['getproxactiveforce',['getProxActiveForce',['../class_adafruit___v_c_n_l4200.html#ad337e31f82a55573ff7fc2217b84ae05',1,'Adafruit_VCNL4200']]],
+  ['getproxboosttypicalsunlightcapability',['getProxBoostTypicalSunlightCapability',['../class_adafruit___v_c_n_l4200.html#a3900e9bfcecd87114fea390a96a80363',1,'Adafruit_VCNL4200']]],
+  ['getproxcancellationlevel',['getProxCancellationLevel',['../class_adafruit___v_c_n_l4200.html#a496f559a3d9363fa2125d20b0834bcda',1,'Adafruit_VCNL4200']]],
+  ['getproxduty',['getProxDuty',['../class_adafruit___v_c_n_l4200.html#aa202f74d61ca2b66b148110e7715e0cc',1,'Adafruit_VCNL4200']]],
+  ['getproxhd',['getProxHD',['../class_adafruit___v_c_n_l4200.html#a82eea9a0d3a8c879f33baf13bfe63d02',1,'Adafruit_VCNL4200']]],
+  ['getproxintegrationtime',['getProxIntegrationTime',['../class_adafruit___v_c_n_l4200.html#a7b28299182c573f12dc9976d47c1c0a0',1,'Adafruit_VCNL4200']]],
+  ['getproxinterrupt',['getProxInterrupt',['../class_adafruit___v_c_n_l4200.html#a3aef0855b2d294ca5803b81524c44e01',1,'Adafruit_VCNL4200']]],
+  ['getproxintlogicmode',['getProxIntLogicMode',['../class_adafruit___v_c_n_l4200.html#aabb35c82f57f1da4ff836e84683040d4',1,'Adafruit_VCNL4200']]],
+  ['getproxintthresholdhigh',['getProxIntThresholdHigh',['../class_adafruit___v_c_n_l4200.html#acf2114b1094e14a6a21bfc4c1f0db61c',1,'Adafruit_VCNL4200']]],
+  ['getproxintthresholdlow',['getProxIntThresholdLow',['../class_adafruit___v_c_n_l4200.html#a3a62eed2cc3b9e920c937874e656218d',1,'Adafruit_VCNL4200']]],
+  ['getproxledcurrent',['getProxLEDCurrent',['../class_adafruit___v_c_n_l4200.html#ab32be5443faa3ed2278aeb446b7e7d5e',1,'Adafruit_VCNL4200']]],
+  ['getproxmultipulse',['getProxMultiPulse',['../class_adafruit___v_c_n_l4200.html#ad0e7f70863c83f52dc41fda4c9495f60',1,'Adafruit_VCNL4200']]],
+  ['getproxpersistence',['getProxPersistence',['../class_adafruit___v_c_n_l4200.html#a0573aadf55b3c003fc5a5ba8a8eb06e3',1,'Adafruit_VCNL4200']]],
+  ['getproxshutdown',['getProxShutdown',['../class_adafruit___v_c_n_l4200.html#ab30331fa84975bb0bbd7d1c4c715262f',1,'Adafruit_VCNL4200']]],
+  ['getproxsmartpersistence',['getProxSmartPersistence',['../class_adafruit___v_c_n_l4200.html#aefd11f2725f90d1c7f58d3e8bdcfe8af',1,'Adafruit_VCNL4200']]],
+  ['getproxsuncancelenable',['getProxSunCancelEnable',['../class_adafruit___v_c_n_l4200.html#ae8558d864c1e4cf7745d620f7bbb23b4',1,'Adafruit_VCNL4200']]],
+  ['getproxsunlightdoubleimmunity',['getProxSunlightDoubleImmunity',['../class_adafruit___v_c_n_l4200.html#ae64330e469dd49c037acf04ac6498662',1,'Adafruit_VCNL4200']]]
+];
