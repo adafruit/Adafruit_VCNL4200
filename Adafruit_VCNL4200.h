@@ -11,30 +11,33 @@
 #define VCNL4200_ALS_CONF 0x00 ///< ALS configuration register.
 #define VCNL4200_ALS_THDH 0x01 ///< ALS high threshold register.
 #define VCNL4200_ALS_THDL 0x02 ///< ALS low threshold register.
-#define VCNL4200_PS_CONF12 0x03 ///< Proximity sensor configuration register 1 & 2
-#define VCNL4200_PS_CONF3MS 0x04 ///< Proximity sensor configuration register 3 & MS
+#define VCNL4200_PS_CONF12                                                     \
+  0x03 ///< Proximity sensor configuration register 1 & 2
+#define VCNL4200_PS_CONF3MS                                                    \
+  0x04 ///< Proximity sensor configuration register 3 & MS
 #define VCNL4200_PS_CANC_LVL 0x05 ///< Proximity cancellation level register.
-#define VCNL4200_PS_THDL 0x06 ///< Proximity sensor low threshold register.
-#define VCNL4200_PS_THDH 0x07 ///< Proximity sensor high threshold register.
-#define VCNL4200_PS_DATA 0x08 ///< Proximity sensor data register.
-#define VCNL4200_ALS_DATA 0x09 ///< ALS data register.
-#define VCNL4200_WHITE_DATA 0x0A ///< White sensor register.
-#define VCNL4200_INT_FLAG 0x0D ///< Interrupt flag register.
-#define VCNL4200_ID 0x0E ///< Device ID register.
+#define VCNL4200_PS_THDL 0x06     ///< Proximity sensor low threshold register.
+#define VCNL4200_PS_THDH 0x07     ///< Proximity sensor high threshold register.
+#define VCNL4200_PS_DATA 0x08     ///< Proximity sensor data register.
+#define VCNL4200_ALS_DATA 0x09    ///< ALS data register.
+#define VCNL4200_WHITE_DATA 0x0A  ///< White sensor register.
+#define VCNL4200_INT_FLAG 0x0D    ///< Interrupt flag register.
+#define VCNL4200_ID 0x0E          ///< Device ID register.
 
 #define VCNL4200_INTFLAG_PROX_UPFLAG 0x080 ///< Proximity code saturation flag
-#define VCNL4200_INTFLAG_PROX_SPFLAG 0x40 ///< Proximity sunlight protection flag
-#define VCNL4200_INTFLAG_ALS_LOW 0x20 ///< ALS interrupt flag
-#define VCNL4200_INTFLAG_ALS_HIGH 0x10 ///< Proximity interrupt flag
+#define VCNL4200_INTFLAG_PROX_SPFLAG                                           \
+  0x40                                   ///< Proximity sunlight protection flag
+#define VCNL4200_INTFLAG_ALS_LOW 0x20    ///< ALS interrupt flag
+#define VCNL4200_INTFLAG_ALS_HIGH 0x10   ///< Proximity interrupt flag
 #define VCNL4200_INTFLAG_PROX_CLOSE 0x02 ///< Proximity THDH trigger
-#define VCNL4200_INTFLAG_PROX_AWAY 0x01 ///< Proximity THDL trigger
+#define VCNL4200_INTFLAG_PROX_AWAY 0x01  ///< Proximity THDL trigger
 
 // ALS Integration Time settings
 /**
  * @brief Enumeration for ALS integration time settings.
  */
 typedef enum {
-  VCNL4200_ALS_IT_50MS = 0x00, ///< 50 ms integration time
+  VCNL4200_ALS_IT_50MS = 0x00,  ///< 50 ms integration time
   VCNL4200_ALS_IT_100MS = 0x01, ///< 100 ms integration time
   VCNL4200_ALS_IT_200MS = 0x02, ///< 200 ms integration time
   VCNL4200_ALS_IT_400MS = 0x03  ///< 400 ms integration time
@@ -93,8 +96,8 @@ typedef enum {
 typedef enum {
   VCNL4200_PS_INT_DISABLE = 0x00, ///< Proximity interrupt disabled
   VCNL4200_PS_INT_CLOSE = 0x01, ///< Proximity interrupt when an object is close
-  VCNL4200_PS_INT_AWAY = 0x02, ///< Proximity interrupt when an object is away
-  VCNL4200_PS_INT_BOTH = 0x03 ///< Proximity interrupt for both close and away
+  VCNL4200_PS_INT_AWAY = 0x02,  ///< Proximity interrupt when an object is away
+  VCNL4200_PS_INT_BOTH = 0x03   ///< Proximity interrupt for both close and away
 } vcnl4200_ps_int_t;
 
 // LED Current settings
@@ -102,8 +105,8 @@ typedef enum {
  * @brief Enumeration for LED current settings.
  */
 typedef enum {
-  VCNL4200_LED_I_50MA = 0x00, ///< LED current 50mA
-  VCNL4200_LED_I_75MA = 0x01, ///< LED current 75mA
+  VCNL4200_LED_I_50MA = 0x00,  ///< LED current 50mA
+  VCNL4200_LED_I_75MA = 0x01,  ///< LED current 75mA
   VCNL4200_LED_I_100MA = 0x02, ///< LED current 100mA
   VCNL4200_LED_I_120MA = 0x03, ///< LED current 120mA
   VCNL4200_LED_I_140MA = 0x04, ///< LED current 140mA
@@ -123,12 +126,15 @@ typedef enum {
   VCNL4200_PS_MPS_8 = 0x03  ///< Proximity multi pulse 8
 } vcnl4200_ps_mps_t;
 
+/**! Class to hold interface for VCNL4200 chip */
+
 class Adafruit_VCNL4200 {
 public:
   Adafruit_VCNL4200();
   ~Adafruit_VCNL4200();
 
-  bool begin(uint8_t i2c_addr = VCNL4200_I2CADDR_DEFAULT, TwoWire *wire = &Wire);
+  bool begin(uint8_t i2c_addr = VCNL4200_I2CADDR_DEFAULT,
+             TwoWire *wire = &Wire);
   bool setALSshutdown(bool shutdown);
   bool getALSshutdown();
   bool setALSIntegrationTime(vcnl4200_als_it_t it);
