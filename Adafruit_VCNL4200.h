@@ -22,7 +22,6 @@
 #define VCNL4200_INT_FLAG 0x0D ///< Interrupt flag register.
 #define VCNL4200_ID 0x0E ///< Device ID register.
 
-
 #define VCNL4200_INTFLAG_PROX_UPFLAG 0x080 ///< Proximity code saturation flag
 #define VCNL4200_INTFLAG_PROX_SPFLAG 0x40 ///< Proximity sunlight protection flag
 #define VCNL4200_INTFLAG_ALS_LOW 0x20 ///< ALS interrupt flag
@@ -30,8 +29,10 @@
 #define VCNL4200_INTFLAG_PROX_CLOSE 0x02 ///< Proximity THDH trigger
 #define VCNL4200_INTFLAG_PROX_AWAY 0x01 ///< Proximity THDL trigger
 
-
 // ALS Integration Time settings
+/**
+ * @brief Enumeration for ALS integration time settings.
+ */
 typedef enum {
   VCNL4200_ALS_IT_50MS = 0x00, ///< 50 ms integration time
   VCNL4200_ALS_IT_100MS = 0x01, ///< 100 ms integration time
@@ -40,6 +41,9 @@ typedef enum {
 } vcnl4200_als_it_t;
 
 // ALS Persistence settings
+/**
+ * @brief Enumeration for ALS persistence settings.
+ */
 typedef enum {
   VCNL4200_ALS_PERS_1 = 0x00, ///< ALS persistence 1 conversion
   VCNL4200_ALS_PERS_2 = 0x01, ///< ALS persistence 2 conversions
@@ -48,6 +52,9 @@ typedef enum {
 } vcnl4200_als_pers_t;
 
 // Proximity Sensor Integration Time settings
+/**
+ * @brief Enumeration for Proximity Sensor integration time settings.
+ */
 typedef enum {
   VCNL4200_PS_IT_1T = 0x00, ///< Proximity integration time 1T
   VCNL4200_PS_IT_2T = 0x01, ///< Proximity integration time 2T
@@ -58,6 +65,9 @@ typedef enum {
 } vcnl4200_ps_it_t;
 
 // Proximity Sensor Persistence settings
+/**
+ * @brief Enumeration for Proximity Sensor persistence settings.
+ */
 typedef enum {
   VCNL4200_PS_PERS_1 = 0x00, ///< Proximity persistence 1 conversion
   VCNL4200_PS_PERS_2 = 0x01, ///< Proximity persistence 2 conversions
@@ -66,6 +76,9 @@ typedef enum {
 } vcnl4200_ps_pers_t;
 
 // Proximity Sensor Duty settings
+/**
+ * @brief Enumeration for Proximity Sensor duty cycle settings.
+ */
 typedef enum {
   VCNL4200_PS_DUTY_1_160 = 0x00, ///< Proximity duty cycle 1/160
   VCNL4200_PS_DUTY_1_320 = 0x01, ///< Proximity duty cycle 1/320
@@ -74,6 +87,9 @@ typedef enum {
 } vcnl4200_ps_duty_t;
 
 // Proximity Sensor Interrupt settings
+/**
+ * @brief Enumeration for Proximity Sensor interrupt settings.
+ */
 typedef enum {
   VCNL4200_PS_INT_DISABLE = 0x00, ///< Proximity interrupt disabled
   VCNL4200_PS_INT_CLOSE = 0x01, ///< Proximity interrupt when an object is close
@@ -82,6 +98,9 @@ typedef enum {
 } vcnl4200_ps_int_t;
 
 // LED Current settings
+/**
+ * @brief Enumeration for LED current settings.
+ */
 typedef enum {
   VCNL4200_LED_I_50MA = 0x00, ///< LED current 50mA
   VCNL4200_LED_I_75MA = 0x01, ///< LED current 75mA
@@ -94,6 +113,9 @@ typedef enum {
 } vcnl4200_led_i_t;
 
 // Proximity Sensor Multi Pulse settings
+/**
+ * @brief Enumeration for Proximity Sensor multi-pulse settings.
+ */
 typedef enum {
   VCNL4200_PS_MPS_1 = 0x00, ///< Proximity multi pulse 1
   VCNL4200_PS_MPS_2 = 0x01, ///< Proximity multi pulse 2
