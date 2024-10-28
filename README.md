@@ -4,7 +4,7 @@
 
 This is the Adafruit VCNL4200 library.
 
-Tested and works great with the Adafruit VCNL4200 Breakout Board: http://www.adafruit.com/product/6062
+Tested and works great with the Adafruit VCNL4200 Breakout Board: http://www.adafruit.com/product/6064
 
 This chip uses I2C to communicate, 2 pins are required to interface
 
